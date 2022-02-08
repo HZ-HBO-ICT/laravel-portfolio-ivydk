@@ -14,15 +14,17 @@
     <header>
         <a href="/index.html"><img src="/img/id-logo-2.png" class="header-logo" alt="id-logo">IVY DEKKER</a>
     </header>
+
     <nav class="nav-bar">
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/profile.html">Profile</a></li>
-            <li><a href="/dashboard.html">Dashboard</a></li>
-            <li><a href="/faq.html">FAQ</a></li>
-            <li><a href="/blog.html" class="active">Blog</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="profile">Profile</a></li>
+            <li><a href="dashboard">Dashboard</a></li>
+            <li><a href="FAQ">FAQ</a></li>
+            <li><a href="blog" class="active">Blog</a></li>
         </ul>
     </nav>
+
     <main>
 
         <article class="link">
