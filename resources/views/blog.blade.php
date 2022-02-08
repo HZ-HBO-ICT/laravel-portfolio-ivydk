@@ -12,16 +12,16 @@
 
 <body>
     <header>
-        <a href="/index.html"><img src="/img/id-logo-2.png" class="header-logo" alt="id-logo">IVY DEKKER</a>
+        <a href="/"><img src="/img/id-logo-2.png" class="header-logo" alt="id-logo">IVY DEKKER</a>
     </header>
 
     <nav class="nav-bar">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="profile.blade.php">Profile</a></li>
-            <li><a href="dashboard.blade.php">Dashboard</a></li>
-            <li><a href="faq.blade.php">FAQ</a></li>
-            <li><a href="blog.blade.php" class="active">Blog</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="profile">Profile</a></li>
+            <li><a href="dashboard">Dashboard</a></li>
+            <li><a href="FAQ">FAQ</a></li>
+            <li><a href="blog" class="active">Blog</a></li>
         </ul>
     </nav>
 
@@ -31,7 +31,7 @@
         <div class="blog-posts" id="box-container">
 
             <div class="container-item">
-                <a href="blog-posts/feedback-pitch-sept.html">
+                <a href="blog/feedback-pitch-sept">
                     <div class="card">
                         <img src="/img/index.png" class="card-img" alt="schema-article-section-div">
                         <h2>Feedback pitch september</h2>
@@ -40,7 +40,7 @@
             </div>
 
             <div class="container-item">
-                <a href="blog-posts/interessanteBedrijven.html">
+                <a href="blog/interessanteBedrijven">
                     <div class="card">
                         <img src="/img/weave.jpg" class="card-img" alt="schema-article-section-div">
                         <h2>Interessante bedrijven</h2>
@@ -49,7 +49,7 @@
             </div>
 
             <div class="container-item">
-                <a href="/blog-posts/bedrijfssafari.html">
+                <a href="blog/bedrijfssafari">
                     <div class="card">
                         <img src="/img/bedrijfssafari.jpg" class="card-img" alt="damen-naval">
                         <h2>Bedrijfssafari</h2>
@@ -58,7 +58,7 @@
             </div>
 
             <div class="container-item">
-                <a href="/blog-posts/studiekeuze.html">
+                <a href="blog/studiekeuze">
                     <div class="card">
                         <img src="/img/hz-gebouw.jpg" class="card-img" alt="hz-groenewouod">
                         <h2>Studiekeuze</h2>
@@ -67,7 +67,7 @@
             </div>
 
             <div class="container-item">
-                <a href="/blog-posts/swot-analyse.html">
+                <a href="blog/swot-analyse">
                     <div class="card">
                         <img src="/img/swot.jpg" class="card-img" alt="swot">
                         <h2>SWOT analyse</h2>
@@ -76,7 +76,7 @@
             </div>
 
             <div class="container-item">
-                <a href="/blog-posts/programmeerervaring.html">
+                <a href="blog/programmeerervaring">
                     <div class="card">
                         <img src="/img/code.png" class="card-img" alt="code-website">
                         <h2>Programmeerervaring</h2>
@@ -85,7 +85,7 @@
             </div>
 
             <div class="container-item">
-                <a href="/blog-posts/eerste-feedback.html">
+                <a href="blog/eerste-feedback">
                     <div class="card">
                         <img src="/img/feedback.png" class="card-img" alt="feedback">
                         <h2>Eerste feedback</h2>
@@ -95,7 +95,7 @@
 
 
             <div class="container-item">
-                <a href="blog-posts/article-vs-section.html">
+                <a href="blog/article-vs-section">
                     <div class="card">
                         <img src="/img/article-vs-section.jpg" class="card-img" alt="schema-article-section-div">
                         <h2>&ltarticle&gt vs &ltselection&gt</h2>

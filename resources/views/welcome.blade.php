@@ -12,16 +12,16 @@
 
 <body>
 <header>
-    <a href="/index.html"><img src="/img/id-logo-2.png" class="header-logo" alt="id-logo">IVY DEKKER</a>
+    <a href="/"><img src="/img/id-logo-2.png" class="header-logo" alt="id-logo">IVY DEKKER</a>
 </header>
 
 <nav class="nav-bar">
     <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="profile.blade.php">Profile</a></li>
-        <li><a href="dashboard.blade.php">Dashboard</a></li>
-        <li><a href="faq.blade.php">FAQ</a></li>
-        <li><a href="blog.blade.php">Blog</a></li>
+        <li><a href="" class="active">Home</a></li>
+        <li><a href="profile">Profile</a></li>
+        <li><a href="dashboard">Dashboard</a></li>
+        <li><a href="FAQ">FAQ</a></li>
+        <li><a href="blog">Blog</a></li>
     </ul>
 </nav>
 

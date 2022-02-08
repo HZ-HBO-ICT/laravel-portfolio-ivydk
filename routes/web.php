@@ -2,8 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\PostsController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,10 +14,10 @@ use App\Http\Controllers\PostsController;
 */
 
 // post page
-Route::get('/posts/{post}', [PostsController::class, 'show']);
+Route::get('/posts/{post}', [\App\Http\Controllers\PostsController::class, 'show']);
 
 // welcome page
-Route::get('welcome', [\App\Http\Controllers\WelcomeController::class, 'show']);
+Route::get('/', [\App\Http\Controllers\WelcomeController::class, 'show']);
 
 // profile page
 Route::get('/profile', [\App\Http\Controllers\ProfileController::class, 'show']);
@@ -32,5 +30,9 @@ Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'sho
 
 // faq page
 Route::get('/FAQ', [\App\Http\Controllers\FAQController::class, 'show']);
+
+// BLOG POSTS
+// article-vs-section
+Route::get('/blog/{blogPost}', [\App\Http\Controllers\BlogPostsController::class, 'show']);
 
 
