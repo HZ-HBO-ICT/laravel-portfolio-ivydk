@@ -18,10 +18,10 @@
 <nav class="nav-bar">
     <ul>
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="profile.blade.php">Profile</a></li>
+        <li><a href="dashboard.blade.php">Dashboard</a></li>
+        <li><a href="faq.blade.php">FAQ</a></li>
+        <li><a href="blog.blade.php">Blog</a></li>
     </ul>
 </nav>
 

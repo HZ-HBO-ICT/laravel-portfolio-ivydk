@@ -15,10 +15,22 @@ use App\Http\Controllers\PostsController;
 |
 */
 
-//Route::get('/posts/{post}', 'PostsController@show');
-
+// post page
 Route::get('/posts/{post}', [PostsController::class, 'show']);
 
-Route::get('/', function (){
-    return view('welcome');
-});
+// welcome page
+Route::get('welcome', [\App\Http\Controllers\WelcomeController::class, 'show']);
+
+// profile page
+Route::get('/profile', [\App\Http\Controllers\ProfileController::class, 'show']);
+
+// blog page
+Route::get('/blog', [\App\Http\Controllers\BlogController::class, 'show']);
+
+// dashboard page
+Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'show']);
+
+// faq page
+Route::get('/FAQ', [\App\Http\Controllers\FAQController::class, 'show']);
+
+
