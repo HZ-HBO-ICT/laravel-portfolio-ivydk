@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\PostsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,21 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/posts/{post}', function ($post) {
-    $posts = [
-        'my-first-post' => 'Hello, this is my first blog post!',
-        'my-second-post' => 'Now I am getting the hang of this blogging thing.'
-    ];
+//Route::get('/posts/{post}', 'PostsController@show');
 
-    if (!array_key_exists($post, $posts)) {
-        abort(404, 'Sorry, that post was not found.');
-    }
+Route::get('/posts/{post}', [PostsController::class, 'show']);
 
-    return view('post', [
-        'post' => $posts[$post]
-    ]);
-});
-
-Route::get('/', function () {
+Route::get('/', function (){
     return view('welcome');
 });
