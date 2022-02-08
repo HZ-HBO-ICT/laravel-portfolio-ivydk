@@ -17,7 +17,7 @@ class PostsController
             'my-second-post' => 'Now I am getting the hang of this blogging thing.'
         ];
 
-        if (!array_key_exists($post, $posts) ){
+        if (!array_key_exists($post, $posts)) {
             abort(404, 'Sorry, that post was not found. ');
         }
 
