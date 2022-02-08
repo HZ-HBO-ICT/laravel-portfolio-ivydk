@@ -32,7 +32,6 @@ Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'sho
 Route::get('/FAQ', [\App\Http\Controllers\FAQController::class, 'show']);
 
 // BLOG POSTS
-// article-vs-section
 Route::get('/blog/{blogPost}', [\App\Http\Controllers\BlogPostsController::class, 'show']);
 
 

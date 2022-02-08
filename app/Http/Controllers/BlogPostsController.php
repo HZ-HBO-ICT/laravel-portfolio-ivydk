@@ -7,6 +7,12 @@ use function PHPUnit\Framework\assertJsonFileEqualsJsonFile;
 
 class BlogPostsController extends Controller
 {
+    /**
+     * Shows the $blogPost.blade.php page
+     *
+     * @param $blogPost string name of the blogpost
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
     public function show($blogPost)
     {
 
