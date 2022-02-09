@@ -9,7 +9,7 @@
             <div id="container-dashboard">
                 <div id="dashboard-item-1">
                     <div class="dash-table">
-                        <table width="800px">
+                        <table>
                             <tr>
                                 <th>Quartile</th>
                                 <th>Course</th>
@@ -94,7 +94,7 @@
                                 <!--Behaalde EC-->
                             </tr>
                             <tr>
-                                <td>Assesment</td>
+                                <td>Assessment</td>
                                 <td class="niet-begonnen"></td>
                                 <td>...</td>
                                 <!--Cijfer-->
@@ -130,14 +130,14 @@
                                 <!--Behaalde EC-->
                             </tr>
                             <tr>
-                                <td>Assesment</td>
+                                <td>Assessment</td>
                                 <td class="niet-begonnen"></td>
                                 <td>...</td>
                                 <!--Cijfer-->
                                 <td>...</td>
                                 <!--Behaalde EC-->
                             </tr>
-                            <!-- Entrire year, 12.5 EC Portfolio ; personality 1 en 2 beide 1.25 EC en Portfolio -->
+                            <!-- Entire year, 12.5 EC Portfolio ; personality 1 en 2 beide 1.25 EC en Portfolio -->
                             <tr>
                                 <td rowspan="3"><b>Whole year</b></td>
                                 <td>Personality</td>
@@ -181,7 +181,7 @@
                                 <td>0/60</td>
                             </tr>
                         </table>
-                        <p><b> Behaalde studiepunten:</b> 0/60 <progress value="0" max="60" /> </p>
+                        <p><b> Behaalde studiepunten:</b> 0/60 <progress value="0" max="60"></progress> </p>
                     </div>
 
                     <div id="dashboard-item-2">
@@ -215,7 +215,7 @@
 
             <h2>BSA</h2>
             <p>Eerstejaars moeten verplicht een aantal punten halen om door te mogen naar het tweede studiejaar. Haal je dat niet dan krijg je een negatief ‘bindend studieadvies’ (bsa) en moet je stoppen met je opleiding. Behaal je minder dan 45EC in het
-                eerste jaar dan krijg je een NBSA (Negatief Bindend Studie Advies) dit houdt in dat je niet door mag met de studie, tenzij jij hier een goede rede voor hebt dan is er een optie dat je een tweede kans krijgt. Als je een NBSA hebt gekregen
+                eerste jaar dan krijg je een NBSA (Negatief Bindend StudieAdvies) dit houdt in dat je niet door mag met de studie, maar niet als jij hier een goede rede voor hebt dan is er een optie dat je een tweede kans krijgt. Als je een NBSA hebt gekregen
                 mag je wel bij een andere studie beginnen. </p>
 
         </article>
