@@ -15,15 +15,7 @@
     <a href="/"><img src="/img/id-logo-2.png" class="header-logo" alt="id-logo">IVY DEKKER</a>
   </header>
 
-  <nav class="nav-bar">
-      <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="profile" class="active">Profile</a></li>
-          <li><a href="dashboard">Dashboard</a></li>
-          <li><a href="FAQ">FAQ</a></li>
-          <li><a href="blog">Blog</a></li>
-      </ul>
-  </nav>
+  @include('includes.nav')
 
 
   <main>

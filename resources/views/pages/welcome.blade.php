@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="/img/id-logo-2.png">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="icon" href="public/img/id-logo-2.png">
 </head>
 
 <body>
@@ -15,15 +15,7 @@
     <a href="/"><img src="/img/id-logo-2.png" class="header-logo" alt="id-logo">IVY DEKKER</a>
 </header>
 
-<nav class="nav-bar">
-    <ul>
-        <li><a href="" class="active">Home</a></li>
-        <li><a href="profile">Profile</a></li>
-        <li><a href="dashboard">Dashboard</a></li>
-        <li><a href="FAQ">FAQ</a></li>
-        <li><a href="blog">Blog</a></li>
-    </ul>
-</nav>
+@include('includes.nav')
 
 <main>
     <article>

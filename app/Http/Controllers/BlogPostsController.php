@@ -20,6 +20,6 @@ class BlogPostsController extends Controller
 //            abort(404, 'Sorry, that post was not found. ');
 //        }
 
-        return view($blogPost);
+        return view('pages/blogPages/'.$blogPost);
     }
 }
