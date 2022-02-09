@@ -13,4 +13,3 @@ function set_active(string $path, string $active = 'active'): string
 {
     return Request::is($path) ? $active : '';
 }
-
