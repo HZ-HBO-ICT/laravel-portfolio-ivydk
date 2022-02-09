@@ -2,7 +2,7 @@
 
 <nav class="nav-bar">
     <ul>
-        <li><a href="" class="">Home</a></li>
+        <li><a href="" class="active">Home</a></li>
 
         <li><a href="profile" class="">Profile</a></li>
 
