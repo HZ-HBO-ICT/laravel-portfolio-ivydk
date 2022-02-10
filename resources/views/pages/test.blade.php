@@ -3,52 +3,49 @@
 @section('title', 'Test Page')
 
 @section('content')
-    <article class="link faq">
-        <h2>Veelgestelde vragen</h2>
-        <details class="bottom">
-            <summary>Hoe print je een document hier op de HZ?</summary>
-            <p>In een printkamer met je HZ pasje, de printkamer vind je in de hokken met een koffiekopje erop.
-                je kan je <a href="https://print.hz.nl/" target="_blank">print sturen</a> naar de printer en met je
-                HZ pasje kan je de print betalen.
-            </p>
-        </details>
-        <details class="bottom">
-            <summary>Hoe scan je een document en stuur je dit naar je laptop hier
-                op de HZ?</summary>
-            <p>Dit kan in de DOC-room.</p>
-        </details>
-        <details class="bottom">
-            <summary>Wat moet je doen als je ziek bent of symptomen van het corona virus?</summary>
-            <p>Dit moet je melden bij een van de docenten. En als het mogelijk is alle lessen online
-                volgen en de opdrachten thuis maken.
-            </p>
-        </details>
-        <details class="bottom">
-            <summary>Hoe kun je een projectruimte boeken in één van de vleugels van het gebouw?</summary>
-            <p>Via HZ-Portal kan je naar het <a href="https://hzuniversity.topdesk.net/tas/public/ssp/"
-                                                target="_blank">selfservice
-                    portal</a>. Via dit portaal kan je
-                een projectruim boeken.
-            </p>
-        </details>
-        <details class="bottom">
-            <summary>Wat zijn de instructies om je auto te parkeren op het HZ parkeerterrein?</summary>
-            <p>Je hebt drie parkeeropties.
-            <dl>
-                <dt>Je kan gratis parkeren bij PZEM</dt>
-                <dt>Bij Poelendaelesingel hier kan je aanbellen bij de slagboom, daarna kan je parkeren bij een van
-                    de HZ parkeerplaatsen</dt>
-                <dt>Je kan bi HZ zelf parkeeren als je jouw pas laat zien bij de slagboom.</dt>
-            </dl>
-            </p>
-        </details>
-        <details class="bottom">
-            <summary>Hoe zet je geld op jouw HZ pas?</summary>
-            <p>Dit kan op de begaande grond. als je binnenkomt is er aan de linkerkant na de receptie een machine
-                aan de muur waar
-                je geld op jouw pasje kunt zetten.
-            </p>
-        </details>
+    <h1>Content</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec enim ante. Donec nec gravida nunc. Cras vulputate
+        et est vitae sollicitudin. Curabitur nec venenatis odio. In non posuere lectus. In a eleifend lorem. Vestibulum id
+        dignissim nunc. Ut molestie at quam ac ullamcorper. Cras suscipit erat a elit placerat, non finibus turpis congue.
+        Nullam sit amet malesuada nunc, vitae fringilla libero. Vivamus non aliquet dui. In dolor enim, consequat eu mauris
+        eget, tincidunt vehicula tellus. Praesent sit amet dictum sem. Donec viverra faucibus tincidunt. Nullam egestas
+        semper lorem, nec sollicitudin quam maximus iaculis. Aliquam placerat, ante nec gravida ullamcorper, massa est
+        sollicitudin magna, ut molestie justo mauris quis libero.
+    </p>
 
-    </article>
+    <p>
+        Nullam et mauris rutrum, posuere erat non, convallis libero. Cras a leo quis metus dignissim varius. Quisque euismod
+        ut mauris id euismod. Sed aliquam eget turpis eget rutrum. In pellentesque rhoncus iaculis. Duis in rutrum enim, nec
+        volutpat libero. Fusce convallis mollis gravida. Vestibulum ut neque efficitur, efficitur magna ac, facilisis ante.
+    </p>
+
+    <p>
+        Cras cursus nibh at nulla aliquam semper. Donec quis arcu cursus, vestibulum velit sit amet, pulvinar mauris.
+        Pellentesque tincidunt, risus vitae semper tempus, nisl purus lobortis justo, ac dapibus erat dolor sed nibh.
+        Praesent sollicitudin velit eu lectus eleifend commodo. Etiam feugiat rhoncus lacinia. Nullam justo odio, aliquam in
+        neque nec, aliquet dictum massa. Curabitur in ex in neque lacinia efficitur. Fusce viverra nibh id mauris tincidunt,
+        id rutrum neque mattis. Proin purus ante, vestibulum fringilla nisl ac, fermentum varius eros. Donec eleifend
+        gravida ante. Proin congue tincidunt pellentesque. Quisque sed ullamcorper risus, quis rhoncus elit. Nulla mollis
+        malesuada vulputate. Sed gravida malesuada sollicitudin.
+    </p>
+
+    <p>
+        Suspendisse euismod arcu non turpis luctus tincidunt. Praesent leo ante, commodo sit amet malesuada vel, varius et
+        arcu. Cras cursus nisi id enim sagittis ultricies. Duis metus arcu, molestie eu tellus vel, placerat suscipit lacus.
+        Nam eu felis id lectus vulputate pharetra ut finibus tortor. Vestibulum vel arcu eget nulla maximus pulvinar at sed
+        libero. Nam ultrices, ligula ut viverra blandit, erat nulla faucibus risus, vitae interdum ante odio ut metus.
+        Praesent at nisi eros. Aenean felis magna, semper non aliquam a, sagittis quis nulla.
+    </p>
+
+    <p>Vivamus rhoncus, massa a maximus feugiat, sem sem eleifend magna, vitae maximus quam quam nec nulla. Suspendisse
+        sit amet ipsum nec sapien euismod ultrices. Vivamus fermentum neque id ligula lobortis, at iaculis felis dictum.
+        Pellentesque rhoncus, turpis nec vulputate consequat, neque ligula ornare turpis, id dignissim neque augue a velit.
+        Mauris gravida purus non egestas hendrerit. Phasellus ullamcorper feugiat leo ac bibendum. Nam vestibulum eu justo
+        eget rutrum. Integer augue risus, malesuada quis velit id, aliquet cursus erat. Vivamus finibus nunc sit amet neque
+        pharetra, vel varius nisi semper. Fusce sit amet viverra leo, at sollicitudin ante. Donec ac sollicitudin augue.
+        Nulla feugiat eros lorem, sed luctus nibh tempus ut. Sed vitae facilisis quam. Duis quis suscipit nunc. Quisque
+        lobortis mi quis tortor consectetur faucibus.
+    </p>
+
 @endsection

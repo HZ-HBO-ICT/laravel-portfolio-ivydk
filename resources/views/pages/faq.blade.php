@@ -3,6 +3,7 @@
 @section('title', 'FAQ')
 
 @section('content')
+    <h1>Veelgestelde vragen</h1>
         @foreach($posts as $post)
             <details class="bottom">
                 <summary>{{ $post->question }}</summary>
@@ -15,4 +16,5 @@
                 </p>
             </details>
         @endforeach
+
 @endsection
