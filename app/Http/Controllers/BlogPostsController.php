@@ -13,7 +13,7 @@ class BlogPostsController extends Controller
      * @param $blogPost string name of the blogpost
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function show($blogPost)
+    public function show(string $blogPost)
     {
 
 //        if (!array_key_exists($blogPost, $blogPosts)) {

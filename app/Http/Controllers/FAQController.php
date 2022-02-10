@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Faq;
 use Illuminate\Http\Request;
 
 class FAQController extends Controller
@@ -13,6 +14,12 @@ class FAQController extends Controller
      */
     public function show()
     {
-        return view('pages/faq');
+
+        $posts = Faq::all();
+
+//        return view('pages/faq');
+        return  view('pages/faq', [
+            'posts' => $posts
+        ]);
     }
 }

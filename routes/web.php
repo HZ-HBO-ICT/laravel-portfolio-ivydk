@@ -32,7 +32,7 @@ Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'sho
 Route::get('/FAQ', [\App\Http\Controllers\FAQController::class, 'show']);
 
 // BLOG POSTS
-Route::get('/blog/{blogPost}', [\App\Http\Controllers\BlogPostsController::class, 'show']);
+Route::get('/blog/{slug}', [\App\Http\Controllers\BlogPostsController::class, 'show']);
 
 //Test page
 Route::get('/test', [\App\Http\Controllers\TestController::class, 'show']);
