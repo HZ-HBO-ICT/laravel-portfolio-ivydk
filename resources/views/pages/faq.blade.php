@@ -3,11 +3,16 @@
 @section('title', 'FAQ')
 
 @section('content')
-
-    <ul>
         @foreach($posts as $post)
-            <li>{{ $post->question }}</li>
+            <details class="bottom">
+                <summary>{{ $post->question }}</summary>
+                <p>
+                    {{$post->answer}}
+                </p>
+            {{--TODO: check if there is a link--}}
+                <p>
+                    <a href="{{ $post->link }}">{{$post->link}}</a>
+                </p>
+            </details>
         @endforeach
-    </ul>
-
 @endsection
