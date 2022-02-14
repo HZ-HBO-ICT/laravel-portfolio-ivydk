@@ -36,5 +36,3 @@ Route::get('/blog/{slug}', [\App\Http\Controllers\BlogPostsController::class, 's
 
 //Test page
 Route::get('/test', [\App\Http\Controllers\TestController::class, 'show']);
-
-

@@ -9,7 +9,6 @@
           content="ie=edge"
           >
     <title>Document</title>
-    <link rel="stylesheet" href="../../public/css/style.css">
 </head>
 <body>
     <h1>My Blog Post</h1>

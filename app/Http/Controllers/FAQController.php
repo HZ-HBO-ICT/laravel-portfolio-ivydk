@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Faq;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 
 class FAQController extends Controller
@@ -10,7 +13,7 @@ class FAQController extends Controller
     /**
      * Shows the faq.blade.php page
      *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @return Application|Factory|View
      */
     public function show()
     {
