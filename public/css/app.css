@@ -42,7 +42,7 @@ header a {
 }
 
 main {
-  color: #0B0C10;
+  color: black;
   background-color: #8fdada;
   grid-column: 1/span 5;
   margin: 5px 0px 5px 0px;
@@ -113,7 +113,7 @@ nav {
 }
 
 .nav-bar a:hover {
-  background-color: #8fdada;
+  background-color: #8FDADA;
 }
 
 .active {
@@ -150,7 +150,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #8fdada;
+  color: #8FDADA;
 }
 
 article li {

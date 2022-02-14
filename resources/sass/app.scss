@@ -1,5 +1,18 @@
+// Main colors
+$headerColor: #1F2833;
+$bodyColor: #FFF;
+$mainColor: #8FDADA;
+$asideColor: #C5C6C7;
+$footerColor: #1F2833;
+$navColor: $asideColor;
+
+// Action colors
+$hoover: $mainColor;
+$active: $headerColor;
+
+
 body {
-    background-color: #FFF;
+    background-color: $bodyColor;
     display: grid;
     width: 85%;
     margin: auto;
@@ -19,7 +32,7 @@ header {
     height: fit-content;
     padding: 15px;
     font-size: 30px;
-    background-color: #1F2833;
+    background-color: $headerColor;
     font-weight: bold;
     margin: 10px 0px 5px 0px;
     color: white;
@@ -40,7 +53,7 @@ header a {
 }
 
 main {
-    color: #0B0C10;
+    color: black;
     background-color: rgb( 143, 218, 218);
     grid-column: 1 / span 5;
     margin: 5px 0px 5px 0px;
@@ -57,7 +70,7 @@ article {
 
 aside {
     display: block;
-    background-color: #C5C6C7;
+    background-color: $asideColor;
     grid-column: 1 / span 5;
     padding: 0px 0px 0px 0px;
     margin: 5px 0px 5px 0px;
@@ -70,7 +83,7 @@ footer {
     height: fit-content;
     padding: 15px;
     font-size: 15px;
-    background-color: #1F2833;
+    background-color: $footerColor;
     color: white;
     margin: 5px 0px 10px 0px;
     display: inline;
@@ -84,7 +97,7 @@ nav {
     margin: 5px 0px 5px 0px;
     font-size: 15px;
     font-weight: bold;
-    background-color: #C5C6C7;
+    background-color: $navColor;
 }
 
 .nav-bar ul {
@@ -107,11 +120,11 @@ nav {
 }
 
 .nav-bar a:hover {
-    background-color: rgb( 143, 218, 218);
+    background-color: $hoover;
 }
 
 .active {
-    background-color: #1F2833;
+    background-color: $active;
 }
 
 header,
@@ -144,7 +157,7 @@ footer a {
 }
 
 footer a:hover {
-    color: rgb(143, 218, 218);
+    color: $hoover;
 }
 
 article li {
