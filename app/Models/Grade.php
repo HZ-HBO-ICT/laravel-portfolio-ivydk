@@ -9,6 +9,12 @@ class Grade extends Model
 {
     use HasFactory;
 
+    private $best_grade;
+    /**
+     * @var \Illuminate\Support\Carbon
+     */
+    private $passed_at;
+
     /**
      * checks if the new result >= current grade
      * when the grade is >= current grade the new grade becomes the best_grade and
