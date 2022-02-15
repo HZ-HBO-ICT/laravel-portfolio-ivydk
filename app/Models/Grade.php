@@ -14,6 +14,10 @@ class Grade extends Model
      * @var \Illuminate\Support\Carbon
      */
     private $passed_at;
+    /**
+     * @var mixed
+     */
+    private $id;
 
     /**
      * checks if the new result >= current grade
@@ -29,5 +33,20 @@ class Grade extends Model
             $this->best_grade = $newGrade;
             $this->passed_at = now();
         }
+    }
+
+    /**
+     * adds all the ECs
+     *
+     * @return int|mixed
+     */
+    public function totalECs(): int
+    {
+        $total = 0;
+        foreach ($this->id as $id) {
+            $total += $this->EC;
+        }
+
+        return $total;
     }
 }

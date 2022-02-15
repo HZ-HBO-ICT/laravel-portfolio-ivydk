@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Grade;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -13,6 +14,9 @@ class DashboardController extends Controller
      */
     public function show()
     {
-        return view('pages/dashboard');
+        $grades = Grade::all();
+        return view('pages/dashboard', [
+            'grades' => $grades
+        ]);
     }
 }
