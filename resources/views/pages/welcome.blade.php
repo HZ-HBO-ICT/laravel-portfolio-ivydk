@@ -15,7 +15,7 @@
                         <td>Ivy Dekker</td>
                     </tr>
                     <tr>
-                        <td>18 jaar</td>
+                        <td>19 jaar</td>
                     </tr>
                     <tr>
                         <td>Nieuw en Sint Joosland</td>

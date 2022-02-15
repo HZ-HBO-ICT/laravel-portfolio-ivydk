@@ -16,7 +16,7 @@
             </tr>
             <tr>
               <td>Leeftijd:</td>
-              <td>18 jaar (25/10/2002)</td>
+              <td>19 jaar (25/10/2002)</td>
             </tr>
             <tr>
               <td>Woonplaats + woonsituatie:</td>

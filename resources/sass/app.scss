@@ -34,7 +34,7 @@ header {
     font-size: 30px;
     background-color: $headerColor;
     font-weight: bold;
-    margin: 10px 0px 5px 0px;
+    margin: 10px 0 5px 0;
     color: white;
     display: flex;
 }
@@ -56,7 +56,7 @@ main {
     color: black;
     background-color: rgb( 143, 218, 218);
     grid-column: 1 / span 5;
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0 5px 0;
     padding: 15px 30px;
     align-items: left;
     justify-content: left;
@@ -198,7 +198,6 @@ h1 {
 
 h2 {
     margin: 10px 0px 15px 0px;
-    font-size: 25px;
 }
 
 h3 {
@@ -254,7 +253,7 @@ h3 {
 }
 
 #img-blog-posts {
-    padding: 0px 0px 15px 15px;
+    padding: 0 0 15px 15px;
 }
 
 #box-container {
@@ -264,7 +263,7 @@ h3 {
 }
 
 .container-item {
-    padding: 0px 0px 30px 15px;
+    padding: 0 0 30px 15px;
 }
 
 .terug-knop {
@@ -419,4 +418,8 @@ summary {
 
 #threats {
     background-color: #E68989;
+}
+
+#excerpt {
+    font-weight: bold;
 }

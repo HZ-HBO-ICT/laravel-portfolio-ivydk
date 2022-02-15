@@ -35,4 +35,6 @@ Route::get('/FAQ', [\App\Http\Controllers\FAQController::class, 'show']);
 Route::get('/blog/{slug}', [\App\Http\Controllers\BlogPostsController::class, 'show']);
 
 //Test page
-Route::get('/test', [\App\Http\Controllers\TestController::class, 'show']);
+Route::get('/articles', [\App\Http\Controllers\ArticleController::class, 'show']);
+
+Route::get('/articles/{articleID}', [\App\Models\ArticlesController::class, 'show']);
