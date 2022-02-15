@@ -5,7 +5,7 @@
 @section('content')
         <article>
             <h2>Toetsen</h2>
-            
+
 {{--           TODO: put this somewhere else !!--}}
             {{$sum = 0}}
             @foreach($grades as $grade)

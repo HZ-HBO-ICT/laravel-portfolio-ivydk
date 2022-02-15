@@ -19,7 +19,7 @@ class FAQSeeder extends Seeder
         $faqs->insert(
             [
                 'question' => 'Hoe print je een document hier op de HZ',
-                'answer' => 'In een printkamer met je HZ pasje, de printkamer vind je in de hokken met een koffiekopje
+                'answer' => 'In een printkamer met je HZ pasje,de printkamer vind je in de hokken met een koffiekopje
                 erop. je kan je print sturen naar de printer en met je HZ pasje kan je de print betalen.',
                 'link' => 'https://print.hz.nl/login.cfm?dest=index.cfm&'
             ]
