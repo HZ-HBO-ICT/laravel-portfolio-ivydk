@@ -10,6 +10,8 @@
 
         <li><a href="../blog" class="{!! set_active('blog') !!}">Blog</a></li>
 
-        <li><a href="../articles" class="{!! set_active('articles') !!}">Test</a></li>
+        <li><a href="../articles" class="{!! set_active('articles')!!}">Articles</a></li>
     </ul>
 </nav>
+
+{{--todo: when you're on a article/artileID page, set active--}}

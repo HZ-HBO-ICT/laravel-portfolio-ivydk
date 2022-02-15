@@ -34,7 +34,8 @@ Route::get('/FAQ', [\App\Http\Controllers\FAQController::class, 'show']);
 // BLOG POSTS
 Route::get('/blog/{slug}', [\App\Http\Controllers\BlogPostsController::class, 'show']);
 
-//Test page
+// article page
 Route::get('/articles', [\App\Http\Controllers\ArticleController::class, 'show']);
 
+// ARTICLES
 Route::get('/articles/{articleID}', [\App\Models\ArticlesController::class, 'show']);
