@@ -18,6 +18,7 @@ class ArticleController extends Controller
     public function show()
     {
         $articles = Article::all();
+//        $articles = Article::latest()::get();
         return view('pages\test', [
             'articles' => $articles
         ]);
