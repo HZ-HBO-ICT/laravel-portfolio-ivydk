@@ -38,4 +38,4 @@ Route::get('/blog/{slug}', [\App\Http\Controllers\BlogPostsController::class, 's
 Route::get('/articles', [\App\Http\Controllers\ArticleController::class, 'show']);
 
 // ARTICLES
-Route::get('/articles/{articleID}', [\App\Models\ArticlesController::class, 'show']);
+Route::get('/articles/{articleID}', [\App\Http\Controllers\ArticlesController::class, 'show']);

@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Models;
+namespace App\Http\Controllers;
 
+use App\Models\Article;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
-class ArticlesController extends Model
+class ArticlesController extends Controller
 {
     /**
      * Shows the correct article body
