@@ -12,14 +12,14 @@ class ArticleFactory extends Factory
      *
      * @return array
      */
-    public function definition()
+    public function definition(): array
     {
         return [
             'title'=> $this->faker->word(),
             'excerpt' => $this->faker->sentence(),
-            'body' => $this->faker->realText(1000)
+            'body' => $this->faker->realText(1000),
+            'picture' => 'public/img/achterkant.jpeg',
         ];
     }
-
     protected $model = Article::class;
 }

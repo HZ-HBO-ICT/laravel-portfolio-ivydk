@@ -28,14 +28,21 @@ Route::get('/blog', [\App\Http\Controllers\BlogController::class, 'show']);
 // dashboard page
 Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'show']);
 
-// faq page
-Route::get('/FAQ', [\App\Http\Controllers\FAQController::class, 'show']);
-
-// BLOG POSTS
+// blog posts
 Route::get('/blog/{slug}', [\App\Http\Controllers\BlogPostsController::class, 'show']);
 
-// article page
-Route::get('/articles', [\App\Http\Controllers\ArticleController::class, 'show']);
-
 // ARTICLES
+//Route::get('/articles', [\App\Http\Controllers\ArticleController::class, 'show']);
+Route::get('/articles', [\App\Http\Controllers\ArticlesController::class, 'index']);
+Route::get('/articles/create', [\App\Http\Controllers\ArticlesController::class, 'create']);
+Route::post('/articles', [\App\Http\Controllers\ArticlesController::class, 'store']);
 Route::get('/articles/{articleID}', [\App\Http\Controllers\ArticlesController::class, 'show']);
+
+
+// FAQ
+// view page
+Route::get('/FAQ', [\App\Http\Controllers\FAQController::class, 'show']);
+// create page
+Route::get('/FAQ/create', [\App\Http\Controllers\FAQController::class, 'create']);
+// store
+Route::post('/FAQ', [\App\Http\Controllers\FAQController::class, 'store']);

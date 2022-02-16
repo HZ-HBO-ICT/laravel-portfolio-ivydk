@@ -14,11 +14,13 @@
 
                     @if($post->link != null)
                         <p>
-                            <a href="{{ $post->link }}">{{$post->link}}</a>
+                            <a target="_blank" href="{{ $post->link }}">{{$post->link}}</a>
                         </p>
                     @endif
 
             </details>
         @endforeach
+
+    <button type="button" class="knop"><a href="FAQ/create">create</a></button>
 
 @endsection

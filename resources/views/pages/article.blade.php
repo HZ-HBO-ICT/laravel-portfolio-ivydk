@@ -17,6 +17,7 @@
             <a href="/articles/{{$article->id}}">
                 <div class="card">
                     <div class = 'fake-img'></div>
+{{--                    <img src="{{$article->picture}}"  alt="">--}}
                     <h2>{{$article->title}}</h2>
                 </div>
             </a>

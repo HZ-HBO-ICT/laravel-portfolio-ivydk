@@ -423,3 +423,21 @@ summary {
 #excerpt {
     font-weight: bold;
 }
+
+.knop{
+    background-color: $headerColor;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.faq-form{
+    font-size: 15px;
+    *, *:before, *:after {
+        margin: 10px;
+    }
+    input[type=text] {
+        width: 400px;
+        padding: 10px;
+    }
+}

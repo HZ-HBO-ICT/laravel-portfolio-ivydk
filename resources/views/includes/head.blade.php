@@ -5,4 +5,5 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="../css/app.css">
     <link rel="icon" href="../img/id-logo-2.png">
+    @yield('head')
 </head>

@@ -415,3 +415,21 @@ summary {
   font-weight: bold;
 }
 
+.knop {
+  background-color: #1F2833;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.faq-form {
+  font-size: 15px;
+}
+.faq-form *, .faq-form *:before, .faq-form *:after {
+  margin: 10px;
+}
+.faq-form input[type=text] {
+  width: 400px;
+  padding: 10px;
+}
+

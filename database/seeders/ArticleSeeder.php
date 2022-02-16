@@ -26,6 +26,8 @@ class ArticleSeeder extends Seeder
 //            ]
 //        );
 
+        // TODO: add existing blog posts
+
         Article::factory()
             ->count(100)
             ->create();
