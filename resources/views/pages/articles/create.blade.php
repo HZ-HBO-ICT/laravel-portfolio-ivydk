@@ -14,10 +14,13 @@
         <input type="text" id="excerpt" name="excerpt" value="Your excerpt"><br>
         <label for="body">Body:</label><br>
         <input type="text" id="body" name="body" value="Your body"><br>
-        <label for="picture">Picture</label>
-        <input type="text" id="picture" name="picture" value="Your body">
-        <input type="submit" value="Submit">
+        <label for="picture">Picture</label><br>
+        <input type="text" id="picture" name="picture" value="Your body"><br>
+        <input type="submit" value="Submit" class="knop">
+        <a href="/articles"><button type="button" class="knop">Cancel</button></a>
     </form>
+
+
 
 @endsection
 

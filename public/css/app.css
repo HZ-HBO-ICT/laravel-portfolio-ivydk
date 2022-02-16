@@ -417,9 +417,16 @@ summary {
 
 .knop {
   background-color: #1F2833;
-  color: #FFF;
+  transition-duration: 0.4s;
   text-decoration: none;
-  font-weight: bold;
+  margin: 0 20px 20px 0;
+  padding: 10px;
+  color: #FFF;
+}
+
+.knop:hover {
+  background-color: #FFF;
+  color: #1F2833;
 }
 
 .faq-form {
@@ -431,5 +438,9 @@ summary {
 .faq-form input[type=text] {
   width: 400px;
   padding: 10px;
+}
+
+summary {
+  cursor: pointer;
 }
 

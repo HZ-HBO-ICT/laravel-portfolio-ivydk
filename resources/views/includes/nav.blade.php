@@ -10,7 +10,7 @@
 
         <li><a href="../blog" class="{!! set_active('blog') !!}">Blog</a></li>
 
-        <li><a href="../articles" class="{!! set_active('articles')!!} || {!! set_active('articles/1')!!}">Articles</a></li>
+        <li><a href="../articles" class="{!! set_active('articles')!!}">Articles</a></li>
     </ul>
 </nav>
 

@@ -41,7 +41,7 @@ Route::get('/articles/{articleID}', [\App\Http\Controllers\ArticlesController::c
 
 // FAQ
 // view page
-Route::get('/FAQ', [\App\Http\Controllers\FAQController::class, 'show']);
+Route::get('/FAQ', [\App\Http\Controllers\FAQController::class, 'index']);
 // create page
 Route::get('/FAQ/create', [\App\Http\Controllers\FAQController::class, 'create']);
 // store

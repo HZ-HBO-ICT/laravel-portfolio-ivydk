@@ -27,17 +27,17 @@ class ArticlesController extends Controller
     /**
      * Shows a view to create a new resource
      *
-     * @returnvoid
+     * @return Application|Factory|View
      */
     public function create()
     {
-        return \view('/pages/article-create');
+        return \view('/pages/articles/create');
     }
 
     /**
      * Persist the new resource
      *
-     * @returnvoid
+     * @return Application|Factory|View
      */
     public function store()
     {
@@ -55,7 +55,7 @@ class ArticlesController extends Controller
     /**
      * Show a view to edit an existing resource
      *
-     * @returnvoid
+     * @return void
      */
     public function edit()
     {
@@ -64,7 +64,7 @@ class ArticlesController extends Controller
     /**
      * Persist the edited resource
      *
-     * @returnvoid
+     * @return void
      */
     public function update()
     {
@@ -73,16 +73,21 @@ class ArticlesController extends Controller
     /**
      * Delete the resource
      *
-     * @returnvoid
+     * @return void
      */
     public function destroy()
     {
     }
 
+    /**
+     * Shows a view with all the articles on a page
+     *
+     * @return Application|Factory|View
+     */
     public function index()
     {
         $articles = Article::all();
 
-        return view('pages/article', ['articles' => $articles]);
+        return view('pages/articles/index', ['articles' => $articles]);
     }
 }

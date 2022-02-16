@@ -3,12 +3,9 @@
 @section('title', 'Test Page')
 
 @section('content')
-    <h1>Articles</h1>
-
-{{--    @foreach($articles as $article)--}}
-{{--        <h2><a href = '/articles/{{$article->id}}'>{{$article->title}}</a></h2>--}}
-{{--        <i id="excerpt">{{$article->excerpt}}</i>--}}
-{{--    @endforeach--}}
+    <div class = "title-bar">
+        <h1>Articles</h1>
+    </div>
 
     <div class="blog-posts" id="box-container">
 
@@ -25,5 +22,6 @@
         @endforeach
 
     </div>
+    <a href="articles/create"><button type="button" class="knop">create</button></a>
 
 @endsection

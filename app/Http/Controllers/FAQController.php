@@ -11,17 +11,17 @@ use Illuminate\Http\Request;
 class FAQController extends Controller
 {
     /**
-     * Shows the faq.blade.php page
+     * Shows the index.blade.php page
      *
      * @return Application|Factory|View
      */
-    public function show()
+    public function index()
     {
 
         $posts = Faq::all();
 
 //        return view('pages/faq');
-        return  view('pages/faq', [
+        return  view('pages/faq/index', [
             'posts' => $posts
         ]);
     }
@@ -33,7 +33,7 @@ class FAQController extends Controller
      */
     public function create()
     {
-        return \view('pages/faq-form');
+        return \view('pages/faq/create');
     }
 
     /**

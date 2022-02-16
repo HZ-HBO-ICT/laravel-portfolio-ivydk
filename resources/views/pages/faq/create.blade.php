@@ -14,7 +14,9 @@
         <input type="text" id="answer" name="answer" value="Answer to your question"><br>
         <label for="link">Link:</label><br>
         <input type="text" id="link" name="link" value="Link that supports your question"><br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" class = "knop">
+        <a href="/FAQ"><button type="button" class="knop">Cancel</button></a>
+
     </form>
 
 @endsection
