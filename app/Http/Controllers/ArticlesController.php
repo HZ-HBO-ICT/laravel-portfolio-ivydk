@@ -88,10 +88,15 @@ class ArticlesController extends Controller
     /**
      * Delete the resource
      *
-     * @return void
+     * @return Application|Redirector|RedirectResponse
      */
-    public function destroy()
+    public function delete($articleID)
     {
+        $faq = Article::find($articleID);
+
+        $faq->delete();
+
+        return redirect('articles');
     }
 
     /**

@@ -29,6 +29,11 @@
         <a href="/articles"><button type="button" class="knop">Cancel</button></a>
     </form>
 
+    <form method="POST" action="/articles/{{ $article->id }}">
+        @csrf
+        @method('DELETE')
+        <button type="submit" class = "button">Delete</button>
+    </form>
 
 
 @endsection

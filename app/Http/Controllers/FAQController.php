@@ -6,7 +6,9 @@ use App\Models\Faq;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Redirector;
 
 class FAQController extends Controller
 {
@@ -84,16 +86,9 @@ class FAQController extends Controller
     }
 
     /**
-     * Delete the resource
+     *  Shows the recourse
      *
-     * @returnvoid
-     */
-    public function destroy()
-    {
-    }
-
-    /**
-     * @param $id id of the Faq you want to show
+     * @param $id
      * @return Application|Factory|View
      */
     public function show($id)
@@ -101,5 +96,21 @@ class FAQController extends Controller
         $faq = Faq::find($id);
 
         return view('pages/faq/show', ['faq' => $faq]);
+    }
+
+
+    /**
+     * Delete the resource
+     *
+     * @param $id
+     * @return Application|RedirectResponse|Redirector
+     */
+    public function delete($id)
+    {
+        $faq = Faq::find($id);
+
+        $faq->delete();
+
+        return redirect('FAQ');
     }
 }

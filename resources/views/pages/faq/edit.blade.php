@@ -23,4 +23,11 @@
 
     </form>
 
+    {{--Form for the delete button--}}
+    <form method="POST" action="/FAQ/{{$faq->id}}">
+        @csrf
+        @method('DELETE')
+        <button type="submit" class = "button">Delete</button>
+    </form>
+
 @endsection
