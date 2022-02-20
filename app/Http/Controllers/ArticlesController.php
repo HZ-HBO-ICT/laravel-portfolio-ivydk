@@ -90,7 +90,7 @@ class ArticlesController extends Controller
      *
      * @return Application|Redirector|RedirectResponse
      */
-    public function delete($articleID)
+    public function destroy($articleID)
     {
         $faq = Article::find($articleID);
 

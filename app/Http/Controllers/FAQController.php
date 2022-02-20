@@ -105,7 +105,7 @@ class FAQController extends Controller
      * @param $id
      * @return Application|RedirectResponse|Redirector
      */
-    public function delete($id)
+    public function destroy($id)
     {
         $faq = Faq::find($id);
 
