@@ -7,7 +7,9 @@ use App\Models\Faq;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Redirector;
 
 class ArticlesController extends Controller
 {
@@ -37,7 +39,7 @@ class ArticlesController extends Controller
     /**
      * Persist the new resource
      *
-     * @return Application|Factory|View
+     * @return Application
      */
     public function store()
     {
@@ -55,19 +57,32 @@ class ArticlesController extends Controller
     /**
      * Show a view to edit an existing resource
      *
-     * @return void
+     * @return Application|Factory|View
      */
-    public function edit()
+    public function edit($articleID)
     {
+        $article = Article::find($articleID);
+        return view('pages/articles/edit', ['article' => $article]);
     }
 
     /**
      * Persist the edited resource
      *
-     * @return void
+     * @return Application|RedirectResponse|Redirector
      */
-    public function update()
+    public function update($articleID)
     {
+        $article = Article::find($articleID);
+
+        $article->title = request('title');
+        $article->excerpt = request('excerpt');
+        $article->body = request('body');
+        $article->picture = request('picture');
+
+
+        $article->save();
+
+        return redirect('articles/' . $article->id);
     }
 
     /**

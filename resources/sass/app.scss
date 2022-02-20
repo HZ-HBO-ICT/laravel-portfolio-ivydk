@@ -266,11 +266,6 @@ h3 {
     padding: 0 0 30px 15px;
 }
 
-.terug-knop {
-    background-color: #1F2833;
-    color: #FFF;
-}
-
 .img-center {
     justify-content: space-between;
     display: flex;
@@ -443,9 +438,13 @@ summary {
     *, *:before, *:after {
         margin: 10px;
     }
-    input[type=text] {
-        width: 400px;
+    input[type=text], textarea {
+        width: 450px;
         padding: 10px;
+    }
+
+    textarea{
+        height: 100px;
     }
 }
 

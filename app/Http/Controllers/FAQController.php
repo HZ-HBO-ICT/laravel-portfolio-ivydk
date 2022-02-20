@@ -18,11 +18,11 @@ class FAQController extends Controller
     public function index()
     {
 
-        $posts = Faq::all();
+        $faqs = Faq::all();
 
 //        return view('pages/faq');
         return  view('pages/faq/index', [
-            'posts' => $posts
+            'faqs' => $faqs
         ]);
     }
 
@@ -59,8 +59,10 @@ class FAQController extends Controller
      *
      * @returnvoid
      */
-    public function edit()
+    public function edit($id)
     {
+        $faq = Faq::find($id);
+        return view('pages/faq/edit', ['faq' => $faq]);
     }
 
     /**
@@ -68,8 +70,17 @@ class FAQController extends Controller
      *
      * @returnvoid
      */
-    public function update()
+    public function update($id)
     {
+        $faq = Faq::find($id);
+
+        $faq->question = \request('question');
+        $faq->answer = \request('answer');
+        $faq->link = \request('link');
+
+        $faq->save();
+
+        return redirect('FAQ/' . $faq->id);
     }
 
     /**
@@ -79,5 +90,16 @@ class FAQController extends Controller
      */
     public function destroy()
     {
+    }
+
+    /**
+     * @param $id id of the Faq you want to show
+     * @return Application|Factory|View
+     */
+    public function show($id)
+    {
+        $faq = Faq::find($id);
+
+        return view('pages/faq/show', ['faq' => $faq]);
     }
 }

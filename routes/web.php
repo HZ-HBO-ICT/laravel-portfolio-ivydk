@@ -36,7 +36,10 @@ Route::get('/blog/{slug}', [\App\Http\Controllers\BlogPostsController::class, 's
 Route::get('/articles', [\App\Http\Controllers\ArticlesController::class, 'index']);
 Route::get('/articles/create', [\App\Http\Controllers\ArticlesController::class, 'create']);
 Route::post('/articles', [\App\Http\Controllers\ArticlesController::class, 'store']);
+//TODO: change articleID to id
 Route::get('/articles/{articleID}', [\App\Http\Controllers\ArticlesController::class, 'show']);
+Route::get('/articles/{articleID}/edit', [\App\Http\Controllers\ArticlesController::class, 'edit']);
+Route::put('/articles/{articleID}', [\App\Http\Controllers\ArticlesController::class, 'update']);
 
 
 // FAQ
@@ -46,3 +49,9 @@ Route::get('/FAQ', [\App\Http\Controllers\FAQController::class, 'index']);
 Route::get('/FAQ/create', [\App\Http\Controllers\FAQController::class, 'create']);
 // store
 Route::post('/FAQ', [\App\Http\Controllers\FAQController::class, 'store']);
+// show
+Route::get('FAQ/{id}', [\App\Http\Controllers\FAQController::class, 'show']);
+// edit
+Route::get('/FAQ/{id}/edit', [\App\Http\Controllers\FAQController::class, 'edit']);
+// update
+Route::put('/FAQ/{id}', [\App\Http\Controllers\FAQController::class, 'update']);
