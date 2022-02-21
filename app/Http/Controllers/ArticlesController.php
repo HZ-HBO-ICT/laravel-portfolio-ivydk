@@ -39,9 +39,9 @@ class ArticlesController extends Controller
      *
      * @return Application
      */
-    public function store()
+    public function store(Request $request)
     {
-        Article::create($this->validatedArticle());
+        Article::create($this->validatedArticle($request));
 
         return redirect('/articles');
     }
@@ -61,9 +61,9 @@ class ArticlesController extends Controller
      *
      * @return Application|RedirectResponse|Redirector
      */
-    public function update(Article $article)
+    public function update(Article $article, Request $request)
     {
-        $article->update($this->validatedArticle());
+        $article->update($this->validatedArticle($request));
 
         return redirect(route('articles.show', $article));
     }
@@ -95,9 +95,9 @@ class ArticlesController extends Controller
     /**
      * @return array
      */
-    protected function validatedArticle(): array
+    protected function validatedArticle(Request $request): array
     {
-        return request()->validate([
+        return $request->validate([
             'title' => 'required',
             'excerpt' => 'required',
             'body' => 'required'
