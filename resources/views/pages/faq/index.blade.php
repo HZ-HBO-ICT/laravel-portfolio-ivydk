@@ -12,5 +12,4 @@
            </ul>
 
     <a href="FAQ/create"><button type="button" class="knop">create</button></a>
-
 @endsection
