@@ -12,6 +12,7 @@
 
         <label for="question">Question:</label><br>
         <input type="text" id="question" name="question" value="{{$faq->question}}"><br>
+
         <label for="answer">Answer:</label><br>
         <input type="text" id="answer" name="answer" value="{{$faq->answer}}"><br>
         <label for="link">Link:</label><br>
@@ -21,13 +22,13 @@
 
         <a href="/FAQ"><button type="button" class="knop">Cancel</button></a>
 
-        {{--Form for the delete button--}}
-        <form method="POST" action="/FAQ/{{$faq->id}}">
-            @csrf
-            @method('DELETE')
-            <button type="submit" class = "knop">Delete</button>
-        </form>
+    </form>
 
+    {{--Form for the delete button--}}
+    <form method="POST" action="/FAQ/{{$faq->id}}">
+        @csrf
+        @method('DELETE')
+        <button type="submit" class = "knop">Delete</button>
     </form>
 
 @endsection

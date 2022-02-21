@@ -10,7 +10,7 @@
 
     {{--TODO: history.back() or back to the index page--}}
     <input type="button" value="Terug" onclick="history.back()" class="knop">
-    <a href="/articles/{{$article->id}}/edit"><button type="button" class="knop">Edit</button></a>
+    <a href="{{route('articles.edit', $article)}}"><button type="button" class="knop">Edit</button></a>
 
 
 @endsection

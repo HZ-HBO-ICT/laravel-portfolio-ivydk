@@ -16,13 +16,11 @@ class ArticlesController extends Controller
     /**
      * Shows the correct article body
      *
-     * @param $articleID
+     * @param Article $article
      * @return Application|Factory|View
      */
-    public function show($articleID)
+    public function show(Article $article)
     {
-        $article = Article::find($articleID);
-
         return view('pages/articles/show', ['article' => $article]);
     }
 
@@ -43,14 +41,8 @@ class ArticlesController extends Controller
      */
     public function store()
     {
-        $article = new Article();
-        $article->title = request('title');
-        $article->excerpt = request('excerpt');
-        $article->body = request('body');
-        $article->picture = request('picture');
+        Article::create($this->validatedArticle());
 
-
-        $article->save();
         return redirect('/articles');
     }
 
@@ -59,9 +51,8 @@ class ArticlesController extends Controller
      *
      * @return Application|Factory|View
      */
-    public function edit($articleID)
+    public function edit(Article $article)
     {
-        $article = Article::find($articleID);
         return view('pages/articles/edit', ['article' => $article]);
     }
 
@@ -70,19 +61,11 @@ class ArticlesController extends Controller
      *
      * @return Application|RedirectResponse|Redirector
      */
-    public function update($articleID)
+    public function update(Article $article)
     {
-        $article = Article::find($articleID);
+        $article->update($this->validatedArticle());
 
-        $article->title = request('title');
-        $article->excerpt = request('excerpt');
-        $article->body = request('body');
-        $article->picture = request('picture');
-
-
-        $article->save();
-
-        return redirect('articles/' . $article->id);
+        return redirect(route('articles.show', $article));
     }
 
     /**
@@ -90,11 +73,9 @@ class ArticlesController extends Controller
      *
      * @return Application|Redirector|RedirectResponse
      */
-    public function destroy($articleID)
+    public function destroy(Article $article)
     {
-        $faq = Article::find($articleID);
-
-        $faq->delete();
+        $article->delete();
 
         return redirect('articles');
     }
@@ -109,5 +90,17 @@ class ArticlesController extends Controller
         $articles = Article::all();
 
         return view('pages/articles/index', ['articles' => $articles]);
+    }
+
+    /**
+     * @return array
+     */
+    protected function validatedArticle(): array
+    {
+        return request()->validate([
+            'title' => 'required',
+            'excerpt' => 'required',
+            'body' => 'required'
+        ]);
     }
 }

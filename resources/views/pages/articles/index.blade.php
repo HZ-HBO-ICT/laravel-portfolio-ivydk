@@ -11,7 +11,7 @@
 
         @foreach($articles as $article)
         <div class="container-item">
-            <a href="/articles/{{$article->id}}">
+            <a href="{{route('articles.show', $article)}}">
                 <div class="card">
                     <div class = 'fake-img'></div>
 {{--                    <img src="{{$article->picture}}"  alt="">--}}
@@ -22,6 +22,6 @@
         @endforeach
 
     </div>
-    <a href="articles/create"><button type="button" class="knop">create</button></a>
+    <a href="{{route('articles.create')}}"><button type="button" class="knop">create</button></a>
 
 @endsection
