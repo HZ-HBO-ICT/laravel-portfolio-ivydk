@@ -47,7 +47,7 @@
         @error('body')
         <p class="help is-danger">{{ $errors->first('body') }}</p>
         @enderror
-
+it 
         <label for="picture">Picture</label><br>
         <input type="file" id="picture" name="picture" value="{{$article->picture}}"><br>
 
@@ -60,7 +60,7 @@
     <form method="POST" action="{{route('articles.destroy', $article)}}">
         @csrf
         @method('DELETE')
-        <button type="submit" class = "button">Delete</button>
+        <button type="submit" class = "knop">Delete</button>
     </form>
 
 

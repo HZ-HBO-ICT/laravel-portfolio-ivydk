@@ -21,7 +21,7 @@ class ArticlesController extends Controller
      */
     public function show(Article $article)
     {
-        return view('pages/articles/show', ['article' => $article]);
+        return view('pages.articles.show', ['article' => $article]);
     }
 
     /**
@@ -31,7 +31,7 @@ class ArticlesController extends Controller
      */
     public function create()
     {
-        return \view('/pages/articles/create');
+        return \view('pages.articles.create');
     }
 
     /**
@@ -43,7 +43,7 @@ class ArticlesController extends Controller
     {
         Article::create($this->validatedArticle($request));
 
-        return redirect('/articles');
+        return redirect(route('articles.index'));
     }
 
     /**
@@ -53,7 +53,7 @@ class ArticlesController extends Controller
      */
     public function edit(Article $article)
     {
-        return view('pages/articles/edit', ['article' => $article]);
+        return view('pages.articles.edit', ['article' => $article]);
     }
 
     /**
@@ -89,7 +89,7 @@ class ArticlesController extends Controller
     {
         $articles = Article::all();
 
-        return view('pages/articles/index', ['articles' => $articles]);
+        return view('pages.articles.index', ['articles' => $articles]);
     }
 
     /**
