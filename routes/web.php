@@ -29,4 +29,4 @@ Route::get('/blog/{slug}', [\App\Http\Controllers\BlogPostsController::class, 's
 // ARTICLES
 Route::resource('/articles', \App\Http\Controllers\ArticlesController::class);
 // FAQ
-Route::resource('/FAQ', \App\Http\Controllers\FAQController::class);
+Route::resource('/faq', \App\Http\Controllers\FAQController::class);

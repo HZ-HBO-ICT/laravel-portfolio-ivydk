@@ -7,9 +7,9 @@
 
            <ul>
                @foreach($faqs as $faq)
-               <a href="/FAQ/{{$faq->id}}"><li>{{ $faq->question }}</li></a>
+               <a href="{{route('faq.show', $faq)}}"><li>{{ $faq->question }}</li></a>
                @endforeach
            </ul>
 
-    <a href="FAQ/create"><button type="button" class="knop">create</button></a>
+    <a href="{{route('faq.create')}}"><button type="button" class="knop">create</button></a>
 @endsection

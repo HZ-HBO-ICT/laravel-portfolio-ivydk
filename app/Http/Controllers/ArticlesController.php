@@ -93,6 +93,7 @@ class ArticlesController extends Controller
     }
 
     /**
+     * @param Request $request
      * @return array
      */
     protected function validatedArticle(Request $request): array

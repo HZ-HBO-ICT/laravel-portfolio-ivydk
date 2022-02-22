@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use App\Models\Faq;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -23,7 +24,7 @@ class FAQController extends Controller
         $faqs = Faq::all();
 
 //        return view('pages/faq');
-        return  view('pages/faq/index', [
+        return  view('pages.faq.index', [
             'faqs' => $faqs
         ]);
     }
@@ -35,7 +36,7 @@ class FAQController extends Controller
      */
     public function create()
     {
-        return \view('pages/faq/create');
+        return \view('pages.faq.create');
     }
 
     /**
@@ -43,28 +44,23 @@ class FAQController extends Controller
      *
      * @returnvoid
      */
-    public function store()
+    public function store(Request $request)
     {
-//        dump(request()->all());
-        // persist the new article
-        $faq = new Faq();
-        $faq->question = request('question');
-        $faq->answer = request('answer');
-        $faq->link = request('link');
+        Faq::create($this->validatedFaq($request));
 
-        $faq->save();
-        return redirect('/FAQ');
+        return redirect(route('faq.index'));
     }
 
     /**
      * Show a view to edit an existing resource
      *
-     * @returnvoid
+     * @param Faq $faq
+     * @return Application|Factory|View
      */
-    public function edit($id)
+    public function edit(Faq $faq)
     {
-        $faq = Faq::find($id);
-        return view('pages/faq/edit', ['faq' => $faq]);
+//        $faq = Faq::find($id);
+        return view('pages.faq.edit', ['faq' => $faq]);
     }
 
     /**
@@ -72,45 +68,45 @@ class FAQController extends Controller
      *
      * @returnvoid
      */
-    public function update($id)
+    public function update(Faq $faq, Request $request)
     {
-        $faq = Faq::find($id);
+        $faq->update($this->validatedFaq($request));
 
-        $faq->question = \request('question');
-        $faq->answer = \request('answer');
-        $faq->link = \request('link');
-
-        $faq->save();
-
-        return redirect('FAQ/' . $faq->id);
+        return redirect(route('faq.show', $faq));
     }
 
     /**
      *  Shows the recourse
      *
-     * @param $id
+     * @param Faq $faq
      * @return Application|Factory|View
      */
-    public function show($id)
+    public function show(Faq $faq)
     {
-        $faq = Faq::find($id);
+//        $faq = Faq::find($id);
 
-        return view('pages/faq/show', ['faq' => $faq]);
+        return view('pages.faq.show', ['faq' => $faq]);
     }
 
 
     /**
      * Delete the resource
      *
-     * @param $id
+     * @param Faq $faq
      * @return Application|RedirectResponse|Redirector
      */
-    public function destroy($id)
+    public function destroy(Faq  $faq)
     {
-        $faq = Faq::find($id);
-
         $faq->delete();
 
-        return redirect('FAQ');
+        return redirect(route('faq.index'));
+    }
+
+    protected function validatedFaq(Request $request)
+    {
+        return request()->validate([
+            'question' => 'required',
+            'answer' => 'required'
+        ]);
     }
 }
