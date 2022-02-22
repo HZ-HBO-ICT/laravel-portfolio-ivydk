@@ -102,11 +102,16 @@ class FAQController extends Controller
         return redirect(route('faq.index'));
     }
 
+    /**
+     * @param Request $request
+     * @return array
+     */
     protected function validatedFaq(Request $request)
     {
         return request()->validate([
             'question' => 'required',
-            'answer' => 'required'
+            'answer' => 'required',
+            'link' => ''
         ]);
     }
 }
