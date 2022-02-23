@@ -108,9 +108,9 @@ class GradeController extends Controller
             'quartile' => 'required',
             'course_name' => 'required',
             'test_name' => 'required',
-            'EC' => 'required',
-            'lowest_passing_grade' => 'required',
-            'best_grade' => 'required'
+            'EC' =>['required', 'digits_between:0,60'],
+            'lowest_passing_grade' => ['required', 'digits_between:0,10'],
+            'best_grade' => ['required', 'digits_between:0,10']
         ]);
     }
 }
