@@ -47,9 +47,6 @@
         @error('body')
         <p class="help is-danger">{{ $errors->first('body') }}</p>
         @enderror
-it
-        <label for="picture">Picture</label><br>
-        <input type="file" id="picture" name="picture" value="{{$article->picture}}"><br>
 
         <input type="submit" value="Submit" class="knop">
 

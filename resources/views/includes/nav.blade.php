@@ -8,8 +8,6 @@
 
         <li><a href="{{route('faq.index')}}" class="{!! set_active('FAQ') !!}">FAQ</a></li>
 
-        <li><a href="/blog" class="{!! set_active('blog') !!}">Blog</a></li>
-
         <li><a href="{{route('articles.index')}}" class="{!! set_active('articles')!!}">Articles</a></li>
 
         <li><a href="{{route('grades.index')}}" class="{!! set_active('gardes')!!}">Grades</a></li>

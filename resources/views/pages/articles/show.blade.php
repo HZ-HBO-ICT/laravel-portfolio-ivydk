@@ -9,7 +9,8 @@
     <p>{{$article->body}}</p>
 
     {{--TODO: history.back() or back to the index page--}}
-    <input type="button" value="Terug" onclick="history.back()" class="knop">
+    <a href="{{route('articles.index')}}"><button type="button" class="knop">Back</button></a>
+
     <a href="{{route('articles.edit', $article)}}"><button type="button" class="knop">Edit</button></a>
 
 

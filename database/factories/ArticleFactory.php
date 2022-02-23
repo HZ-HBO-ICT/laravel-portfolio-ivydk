@@ -17,8 +17,7 @@ class ArticleFactory extends Factory
         return [
             'title'=> $this->faker->word(),
             'excerpt' => $this->faker->sentence(),
-            'body' => $this->faker->realText(1000),
-            'picture' => 'public/img/achterkant.jpeg',
+            'body' => $this->faker->realText(1000)
         ];
     }
     protected $model = Article::class;

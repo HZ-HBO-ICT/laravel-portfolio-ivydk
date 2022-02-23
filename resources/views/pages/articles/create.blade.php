@@ -46,9 +46,6 @@
         <p class="help is-danger">{{ $errors->first('body') }}</p>
         @enderror
 
-        <label for="picture">Picture</label><br>
-        <input type="file" id="picture" name="picture" value="Picture"><br>
-
         <input type="submit" value="Submit" class="knop">
 
         <a href="{{route('articles.index')}}"><button type="button" class="knop">Cancel</button></a>
