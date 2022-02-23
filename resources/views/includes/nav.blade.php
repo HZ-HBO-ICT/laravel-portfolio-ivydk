@@ -4,13 +4,13 @@
 
         <li><a href="/profile" class="{!! set_active('profile') !!}">Profile</a></li>
 
-        <li><a href="/dashboard" class="{!! set_active('dashboard') !!}">Dashboard</a></li>
+{{--        <li><a href="/dashboard" class="{!! set_active('dashboard') !!}">Dashboard</a></li>--}}
 
         <li><a href="{{route('faq.index')}}" class="{!! set_active('FAQ') !!}">FAQ</a></li>
 
         <li><a href="{{route('articles.index')}}" class="{!! set_active('articles')!!}">Articles</a></li>
 
-        <li><a href="{{route('grades.index')}}" class="{!! set_active('gardes')!!}">Grades</a></li>
+        <li><a href="{{route('grades.index')}}" class="{!! set_active('grades')!!}">Grades</a></li>
 
     </ul>
 </nav>

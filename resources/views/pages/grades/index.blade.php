@@ -72,6 +72,11 @@
 
     <a href="{{route('grades.create')}}"><button type="button" class="knop">create</button></a>
 
+    <h2>BSA</h2>
+    <p>Eerstejaars moeten verplicht een aantal punten halen om door te mogen naar het tweede studiejaar. Haal je dat niet dan krijg je een negatief ‘bindend studieadvies’ (bsa) en moet je stoppen met je opleiding. Behaal je minder dan 45EC in het
+        eerste jaar dan krijg je een NBSA (Negatief Bindend StudieAdvies) dit houdt in dat je niet door mag met de studie, maar niet als jij hier een goede rede voor hebt dan is er een optie dat je een tweede kans krijgt. Als je een NBSA hebt gekregen
+        mag je wel bij een andere studie beginnen. </p>
+
 </article>
 
 @endsection

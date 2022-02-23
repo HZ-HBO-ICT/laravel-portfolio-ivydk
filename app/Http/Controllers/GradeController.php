@@ -104,13 +104,13 @@ class GradeController extends Controller
      */
     protected function validatedGrade(Request $request): array
     {
-        return [
+        return $request->validate([
             'quartile' => 'required',
             'course_name' => 'required',
             'test_name' => 'required',
             'EC' => 'required',
             'lowest_passing_grade' => 'required',
             'best_grade' => 'required'
-        ];
+        ]);
     }
 }

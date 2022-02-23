@@ -48,6 +48,7 @@
         <input
             class="input @error('EC') is-danger @enderror"
             type="number"
+            step="0.1"
             id="EC"
             name="EC"
             value="{{$errors->any() ? old('EC') : ''}}"
@@ -60,6 +61,7 @@
         <input
             class="input @error('lowest_passing_grade') is-danger @enderror"
             type="number"
+            step="0.1"
             id="lowest_passing_grade"
             name="lowest_passing_grade"
             value="{{$errors->any() ? old('lowest_passing_grade') : ''}}"
@@ -72,6 +74,7 @@
         <input
             class="input @error('best_grade') is-danger @enderror"
             type="number"
+            step="0.1"
             id="best_grade"
             name="best_grade"
             value="{{$errors->any() ? old('best_grade') : ''}}"
@@ -79,18 +82,6 @@
         @error('best_grade')
         <p class="help is-danger">{{ $errors->first('best_grade') }}</p>
         @enderror
-
-{{--        <label for="passed_at">Passed at:</label><br>--}}
-{{--        <input--}}
-{{--            class="input @error('passed_at') is-danger @enderror"--}}
-{{--            type="text"--}}
-{{--            id="passed_at"--}}
-{{--            name="passed_at"--}}
-{{--            value="{{$errors->any() ? old('passed_at') : ''}}"--}}
-{{--        ><br>--}}
-{{--        @error('passed_at')--}}
-{{--        <p class="help is-danger">{{ $errors->first('passed_at') }}</p>--}}
-{{--        @enderror--}}
 
         <input type="submit" value="Submit" class = "knop">
         <a href="{{route('grades.index')}}"><button type="button" class="knop">Cancel</button></a>
