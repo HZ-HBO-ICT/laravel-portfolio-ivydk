@@ -9,16 +9,16 @@ class Grade extends Model
 {
     use HasFactory;
 
-    private $best_grade;
-    /**
-     * @var \Illuminate\Support\Carbon
-     */
-    private $passed_at;
-    /**
-     * @var mixed
-     */
-    private $id;
+    protected $fillable = [
+        'quartile',
+        'course_name',
+        'test_name',
+        'EC',
+        'lowest_passing_grade',
+        'best_grade',
+    ];
 
+//    TODO: passed_at will be set even when a grade is too low (<5.5)
     /**
      * checks if the new result >= current grade
      * when the grade is >= current grade the new grade becomes the best_grade and
@@ -31,22 +31,6 @@ class Grade extends Model
     {
         if ($newGrade >= $this->best_grade) {
             $this->best_grade = $newGrade;
-            $this->passed_at = now();
         }
-    }
-
-    /**
-     * adds all the ECs
-     *
-     * @return int|mixed
-     */
-    public function totalECs(): int
-    {
-        $total = 0;
-        foreach ($this->id as $id) {
-            $total += $this->EC;
-        }
-
-        return $total;
     }
 }

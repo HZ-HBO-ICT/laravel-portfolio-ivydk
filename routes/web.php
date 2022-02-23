@@ -30,3 +30,5 @@ Route::get('/blog/{slug}', [\App\Http\Controllers\BlogPostsController::class, 's
 Route::resource('/articles', \App\Http\Controllers\ArticlesController::class);
 // FAQ
 Route::resource('/faq', \App\Http\Controllers\FAQController::class);
+//Grades
+Route::resource('/grades', \App\Http\Controllers\GradeController::class);

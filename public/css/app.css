@@ -417,6 +417,7 @@ summary {
   margin: 0 20px 20px 0;
   padding: 10px;
   color: #FFF;
+  width: 100px !important;
 }
 
 .knop:hover {
@@ -430,12 +431,13 @@ summary {
 .faq-form *, .faq-form *:before, .faq-form *:after {
   margin: 10px;
 }
-.faq-form input[type=text], .faq-form textarea {
+.faq-form input {
   width: 450px;
   padding: 10px;
 }
 .faq-form textarea {
   height: 100px;
+  width: 470px;
 }
 
 summary {

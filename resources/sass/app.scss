@@ -426,6 +426,7 @@ summary {
     margin: 0 20px 20px 0;
     padding: 10px;
     color: #FFF;
+    width: 100px !important;
 }
 .knop:hover{
     background-color: $bodyColor;
@@ -438,13 +439,14 @@ summary {
     *, *:before, *:after {
         margin: 10px;
     }
-    input[type=text], textarea {
+    input{
         width: 450px;
         padding: 10px;
     }
 
     textarea{
         height: 100px;
+        width: 470px;
     }
 }
 
