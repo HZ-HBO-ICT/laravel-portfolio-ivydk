@@ -77,29 +77,27 @@ class GradeController extends Controller
 //    /**
 //     *  Shows the recourse
 //     *
-//     * @param Faq $faq
+//     * @param Grade $grade
 //     * @return Application|Factory|View
 //     */
-//    public function show(Grade $faq)
+//    public function show(Grade $grade)
 //    {
-////        $faq = Faq::find($id);
-//
 //        return view('pages.grade.show', ['grade' => $grade]);
 //    }
-//
-//
-//    /**
-//     * Delete the resource
-//     *
-//     * @param Faq $faq
-//     * @return Application|RedirectResponse|Redirector
-//     */
-//    public function destroy(Faq  $faq)
-//    {
-//        $faq->delete();
-//
-//        return redirect(route('grade.index'));
-//    }
+
+
+    /**
+     * Delete the resource
+     *
+     * @param Grade $grade
+     * @return Application|RedirectResponse|Redirector
+     */
+    public function destroy(Grade $grade)
+    {
+        $grade->delete();
+
+        return redirect(route('grades.index'));
+    }
 
     /**
      * @param Request $request

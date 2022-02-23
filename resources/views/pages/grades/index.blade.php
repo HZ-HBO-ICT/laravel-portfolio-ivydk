@@ -27,6 +27,7 @@
                         <th>Lowest passing</th>
                         <th>Best grade</th>
                         <th>Passed</th>
+                        <th></th>
                     </tr>
 
                     {{--exams, from the table grades--}}
@@ -45,6 +46,13 @@
                             @else
                             No
                             @endif
+                        </td>
+                        <td>
+                            <form method="POST"  action="{{route('grades.destroy', $grade)}}">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" id="table-button">Delete</button>
+                            </form>
                         </td>
                     </tr>
                     @endforeach

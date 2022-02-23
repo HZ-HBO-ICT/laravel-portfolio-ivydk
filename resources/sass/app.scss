@@ -428,10 +428,18 @@ summary {
     color: #FFF;
     width: 100px !important;
 }
-.knop:hover{
+.knop:hover, #table-button:hover{
     background-color: $bodyColor;
     color: $headerColor;
+}
 
+#table-button {
+    background-color: $headerColor;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    padding: 5px;
+    color: #FFF;
+    width: 80px;
 }
 
 .faq-form{
