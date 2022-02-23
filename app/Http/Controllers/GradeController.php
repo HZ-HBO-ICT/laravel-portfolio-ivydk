@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Faq;
 use App\Models\Grade;
+use Faker\Provider\el_GR\Address;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Redirector;
 
 class GradeController extends Controller
 {
@@ -47,30 +51,29 @@ class GradeController extends Controller
         return redirect(route('grades.index'));
     }
 
-//    /**
-//     * Show a view to edit an existing resource
-//     *
-//     * @param Faq $faq
-//     * @return Application|Factory|View
-//     */
-//    public function edit(Faq $faq)
-//    {
-////        $faq = Faq::find($id);
-//        return view('pages.faq.edit', ['faq' => $faq]);
-//    }
-//
-//    /**
-//     * Persist the edited resource
-//     *
-//     * @return void
-//     */
-//    public function update(Faq $faq, Request $request)
-//    {
-//        $faq->update($this->validatedFaq($request));
-//
-//        return redirect(route('faq.show', $faq));
-//    }
-//
+    /**
+     * Show a view to edit an existing resource
+     *
+     * @param Grade $grade
+     * @return Application|Factory|View
+     */
+    public function edit(Grade $grade)
+    {
+        return view('pages.grades.edit', ['grade' => $grade]);
+    }
+
+    /**
+     * Persist the edited resource
+     *
+     * @return Application|RedirectResponse|Redirector
+     */
+    public function update(Grade $grade, Request $request)
+    {
+        $grade->update($this->validatedFaq($request));
+
+        return redirect(route('grades.show', $grade));
+    }
+
 //    /**
 //     *  Shows the recourse
 //     *
