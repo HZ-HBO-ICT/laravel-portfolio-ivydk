@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Course;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -17,6 +18,7 @@ class GradeSeeder extends Seeder
         $grades = DB::table('grades');
 
         $grades->insert([
+            'course_id' => Course::factory(),
             'quartile' => 1,
             'course_name' => 'Programme and career orientation',
             'test_name' => 'Assessment exam',
@@ -26,6 +28,7 @@ class GradeSeeder extends Seeder
         ]);
 
         $grades->insert([
+            'course_id' => 2,
             'quartile' => 1,
             'course_name' => 'Computer science basics',
             'test_name' => 'Written exam',
@@ -35,6 +38,7 @@ class GradeSeeder extends Seeder
         ]);
 
         $grades->insert([
+            'course_id' => 3,
             'quartile' => 1,
             'course_name' => 'Programming basics',
             'test_name' => 'Case study exam',
@@ -44,6 +48,7 @@ class GradeSeeder extends Seeder
         ]);
 
         $grades->insert([
+            'course_id' => 3,
             'quartile' => 2,
             'course_name' => 'Programming basics',
             'test_name' => 'Test',

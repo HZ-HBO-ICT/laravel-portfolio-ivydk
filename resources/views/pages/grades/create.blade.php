@@ -17,7 +17,7 @@
             value="{{$errors->any() ? old('quartile') : ''}}"
         ><br>
         @error('quartile')
-        <p class="help is-danger">{{ $errors->first('') }}</p>
+        <p class="help is-danger">{{ $errors->first('quartile') }}</p>
         @enderror
 
         <label for="course_name">Course name:</label><br>

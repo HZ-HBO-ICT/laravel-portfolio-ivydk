@@ -4,12 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Grade extends Model
 {
     use HasFactory;
 
     protected $fillable = [
+        'course_id',
         'quartile',
         'course_name',
         'test_name',
@@ -32,5 +34,14 @@ class Grade extends Model
         if ($newGrade >= $this->best_grade) {
             $this->best_grade = $newGrade;
         }
+    }
+
+
+    /**
+     * @return BelongsTo
+     */
+    public function course(): BelongsTo
+    {
+        return $this->belongsTo(Course::class); // select * FROM course WHERE cours_id = 'id current course'
     }
 }

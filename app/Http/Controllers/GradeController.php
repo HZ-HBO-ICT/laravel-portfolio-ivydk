@@ -106,7 +106,7 @@ class GradeController extends Controller
     protected function validatedGrade(Request $request): array
     {
         return $request->validate([
-            'quartile' => 'required',
+            'quartile' => ['required', 'digits_between:1,4'],
             'course_name' => 'required',
             'test_name' => 'required',
             'EC' =>['required', 'digits_between:0,60'],
