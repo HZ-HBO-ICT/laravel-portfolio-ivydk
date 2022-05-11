@@ -418,6 +418,7 @@ summary {
   padding: 10px;
   color: #FFF;
   width: 100px !important;
+  border: 0px;
 }
 
 .knop:hover, #table-button:hover {
@@ -464,6 +465,10 @@ summary {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+#error .knop {
+  background-color: #8FDADA;
+  margin: 14px;
 }
 
 .error-message {

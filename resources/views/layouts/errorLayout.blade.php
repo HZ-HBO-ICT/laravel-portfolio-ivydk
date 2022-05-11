@@ -14,6 +14,9 @@
     <div class="error-description">
         @yield('error-description')
     </div>
+
+    <a href='/'><button type="button" class="knop">Go home</button></a>
+
 </div>
 </body>
 
