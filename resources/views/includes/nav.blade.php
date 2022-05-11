@@ -12,6 +12,9 @@
 
         <li><a href="{{route('grades.index')}}" class="{!! set_active('grades')!!}">Grades</a></li>
 
+{{--    to test the 404 error page    --}}
+        <li><a href="test-400">Test</a></li>
+
     </ul>
 </nav>
 
