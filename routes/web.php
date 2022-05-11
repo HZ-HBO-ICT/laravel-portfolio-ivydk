@@ -32,3 +32,6 @@ Route::resource('/articles', \App\Http\Controllers\ArticlesController::class);
 Route::resource('/faq', \App\Http\Controllers\FAQController::class);
 //Grades
 Route::resource('/grades', \App\Http\Controllers\GradeController::class);
+
+Route::view('/500', 'errors.500');
+

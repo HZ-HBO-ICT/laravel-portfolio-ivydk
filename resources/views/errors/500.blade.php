@@ -1,5 +1,13 @@
-@extends('errors::minimal')
+@extends('layouts.errorLayout')
 
-@section('title', __('Server Error'))
-@section('code', '500')
-@section('message', __('Server Error'))
+@section('error-code')
+    <img src="/img/500.png" alt="404" height=300px">
+@endsection
+
+@section('error-message')
+    Internal server error
+@endsection
+
+@section('error-description')
+    Sorry! We had some technical problems during the last operation.
+@endsection
