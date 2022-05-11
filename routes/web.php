@@ -13,21 +13,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/posts/{post}', function ($post) {
-    $posts = [
-        'my-first-post' => 'Hello, this is my first blog post!',
-        'my-second-post' => 'Now I am getting the hang of this blogging thing.'
-    ];
+// post page
+Route::get('/posts/{post}', [\App\Http\Controllers\PostsController::class, 'show']);
+// welcome page
+Route::get('/', [\App\Http\Controllers\WelcomeController::class, 'show']);
+// profile page
+Route::get('/profile', [\App\Http\Controllers\ProfileController::class, 'show']);
+// blog page
+Route::get('/blog', [\App\Http\Controllers\BlogController::class, 'show']);
+// dashboard page
+Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'show']);
+// blog posts
+Route::get('/blog/{slug}', [\App\Http\Controllers\BlogPostsController::class, 'show']);
 
-    if (!array_key_exists($post, $posts)) {
-        abort(404, 'Sorry, that post was not found.');
-    }
+// ARTICLES
+Route::resource('/articles', \App\Http\Controllers\ArticlesController::class);
+// FAQ
+Route::resource('/faq', \App\Http\Controllers\FAQController::class);
+//Grades
+Route::resource('/grades', \App\Http\Controllers\GradeController::class);
 
-    return view('post', [
-        'post' => $posts[$post]
-    ]);
+Route::view('/500', 'errors.500');
+
+Route::get('/test-500', function () {
+    return abort(500);
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
