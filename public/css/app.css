@@ -43,7 +43,7 @@ header a {
 
 main {
   color: black;
-  background-color: #8fdada;
+  background-color: rgb(143, 218, 218);
   grid-column: 1/span 5;
   margin: 5px 0 5px 0;
   padding: 15px 30px;
@@ -418,6 +418,7 @@ summary {
   padding: 10px;
   color: #FFF;
   width: 100px !important;
+  border: 0px;
 }
 
 .knop:hover, #table-button:hover {
@@ -451,5 +452,34 @@ summary {
 
 summary {
   cursor: pointer;
+}
+
+/*
+--------------------------------------------------------------------
+| Error blade
+--------------------------------------------------------------------
+ */
+#error {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#error .knop {
+  background-color: #8FDADA;
+  margin: 14px;
+}
+
+.error-message {
+  color: #C5C6C7;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.error-description {
+  font-size: 22px;
+  font-weight: bold;
 }
 
