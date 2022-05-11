@@ -35,3 +35,7 @@ Route::resource('/grades', \App\Http\Controllers\GradeController::class);
 
 Route::view('/500', 'errors.500');
 
+Route::get('/test-500', function () {
+    return abort(500);
+});
+
